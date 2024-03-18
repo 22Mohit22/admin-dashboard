@@ -1,0 +1,61 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.admin-dashboard-app{
+    display: flex;
+}
+
+svg{
+    width: 30px;
+}
+#nav-container{
+    width: 300px;
+    background-color: #3296cc;
+    position: relative;
+    height: 100vh;
+}
+#logo-board{
+    padding: 20px;
+    height: 40px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#logo-board>svg {
+    width: 50px;
+}
+#dashboard, ul>li{
+    color: white;
+}
+#dashboard{
+    margin-left: 10px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+#utilities{
+    padding: 0 20px;
+    margin-top: 40px;
+}
+#misc{
+    padding: 0 20px;
+    margin-top: 40px;
+}
+ul>li{
+    margin: 10px;
+    width: 200px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+ul>li>a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

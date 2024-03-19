@@ -4,6 +4,9 @@
     padding: 0;
     transition: all .3s ease;
 }
+svg{
+    cursor: pointer;
+}
 .admin-dashboard-app{
     display: flex;
 }
@@ -139,7 +142,6 @@ ul>li>a{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #3296cc;
 }
 #name{
     margin: 0 20px;
@@ -165,6 +167,10 @@ ul>li>a{
 #notif-avtar-name>svg{
     padding: 10px;
     width: 30px;
+    cursor: pointer;
+}
+#notif-avtar-name>svg:active{
+    transform: scale(0.95);
 }
 #name-container-sh{
     display: flex;
@@ -224,7 +230,7 @@ ul>li>a{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .main-content{
@@ -255,6 +261,13 @@ ul>li>a{
     background-color: goldenrod;
     border-radius: 10px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+.card:hover{
+    box-shadow: 0 0 15px;
+}
+.card:active{
+    box-shadow: 0 0 10px;
 }
 .inner-area{
     background-color: #fff;
@@ -292,6 +305,7 @@ ul>li>a{
 #announcements>ul{
     width: 300px;
     padding: 20px;
+    padding-left: 5px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
@@ -305,10 +319,17 @@ ul>li>a{
     color: black;
     transform: none;
     font-size: 13px;
+    border-radius: 10px;
+    margin: 5px;
+    margin-right: 5px;
+    padding: 5px;
+}
+#announcements>ul>li:hover{
+    cursor: pointer;
+    background-color: #e2e8f0;
 }
 
 #trending{
-    width: 340px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -323,10 +344,12 @@ ul>li>a{
     font-weight: bold;
 }
 #trending>ul{
+    width: 300px;
     margin: 0;
     background-color: #fff;
     border-radius: 10px;
     padding: 0 10px;
+    padding-right: 15px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 #trending>ul>li{
@@ -338,6 +361,7 @@ ul>li>a{
     color: black;
     transform: none;
     font-size: 13px;
+    border-radius: 10px;
 }
 
 
@@ -350,7 +374,6 @@ ul>li>a{
     align-items: center;
 }
 .trend-avtar{
-    background-color: green;
     width: 50px;
     height: 50px;
     border-radius: 50px;
@@ -363,4 +386,9 @@ ul>li>a{
 }
 .tag{
     font-weight: bold;
+}
+
+#trending>ul>li:hover{
+    cursor: pointer;
+    background-color: #e2e8f0;
 }
